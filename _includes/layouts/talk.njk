@@ -1,0 +1,15 @@
+{% include 'header.njk' %}
+
+{% for talk in collections.talks %}
+	<div>
+		<a href="{{talk.url | url}}">
+			{{talk.data.title}}
+		</a>
+	</div>
+{% endfor %}
+<div>
+	<p>{{title}}</p>
+	<div>{{content | safe}}</div>
+</div>
+
+{% include 'footer.njk' %}

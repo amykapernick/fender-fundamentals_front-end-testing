@@ -2,7 +2,7 @@
 <div>
 	{% for speaker in collections.speakers %}
 		<div>
-			<a>
+			<a href="{{speaker.url | url}}">
 				{{speaker.data.name}}
 			</a>
 		</div>

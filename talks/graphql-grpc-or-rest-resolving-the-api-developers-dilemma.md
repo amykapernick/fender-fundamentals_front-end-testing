@@ -2,6 +2,7 @@
 title: GraphQL, gRPC or REST? Resolving the API Developer's Dilemma
 speaker: rob-crowley
 tags: talks
+layout: layouts/talk.njk
 ---
 
 GraphQL, gRPC, REST and WebHooks are among a bewildering array of technologies and architectural styles that are available to API developers today. Presented with such myriad options, how can we be confident of making an appropriate decision for the problem at hand? In search of guidance, developers often turn to online communities. This can exacerbate the problem as discussions about API styles often descend into statements about the superiority of one approach over another being presented as universal truths. Such comments invariably earn emotive rebuttals that also lack sufficient nuance. The result of such exchanges is increased confusion and uncertainty. Join me on a tour of these API styles where we will cut through this noise, demonstrate where each style shines (plus where they don't!) and ultimately resolve this dilemma of choice.

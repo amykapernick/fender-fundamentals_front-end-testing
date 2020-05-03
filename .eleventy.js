@@ -28,8 +28,6 @@ module.exports = function(eleventyConfig) {
 		permalink: false,
 	}
 
-	eleventyConfig.addLayoutAlias('post', 'layouts/post.njk')
-
 	eleventyConfig.setLibrary('md', markdownIt(options).use(markdownItAnchor, opts))
 
 	return {

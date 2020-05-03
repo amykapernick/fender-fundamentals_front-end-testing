@@ -3,6 +3,7 @@ name: Amy Kapernick
 role: Front End Dev, Evangelist, Dog Lover
 twitter: '@amys_kapers'
 tags: speakers
+layout: layouts/speaker.njk
 ---
 
 Amy wears many hats as a freelance developer, business owner and conference addict. She regularly shares her knowledge with her peers and the next generation of developers by mentoring, coaching, teaching and feeding into the tech community in many ways.

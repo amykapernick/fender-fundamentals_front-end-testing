@@ -1,0 +1,15 @@
+{% include 'header.njk' %}
+
+{% for speaker in collections.speakers %}
+	<div>
+		<a href="{{speaker.url | url}}">
+			{{speaker.data.name}}
+		</a>
+	</div>
+{% endfor %}
+<div>
+	<p>{{name}}</p>
+	<div>{{content | safe}}</div>
+</div>
+
+{% include 'footer.njk' %}

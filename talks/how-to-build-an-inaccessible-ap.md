@@ -2,6 +2,7 @@
 title: How to Build an Inaccessible App
 speaker: amy-kapernick
 tags: talks
+layout: layouts/talk.njk
 ---
 
 Accessibility is a word often thrown around, but what does it actually mean? As framework starters (like Create React App) start including accessibility testing plugins in their out of the box tests and fill our consoles with warnings, we're starting to see more people include `aria` attributes, and make sure their images have alt tags, but is this really helping?

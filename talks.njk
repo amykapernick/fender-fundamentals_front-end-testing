@@ -2,7 +2,7 @@
 <div>
 	{% for talk in collections.talks %}
 		<div>
-			<a>
+			<a href="{{talk.url | url}}">
 				{{talk.data.title}}
 			</a>
 		</div>
