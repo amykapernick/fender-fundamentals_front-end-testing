@@ -1,0 +1,15 @@
+{% include 'header.njk' %}
+
+{% for speaker in collections.speakers %}
+    <div>
+        <a>
+            {{speaker.data.name}}
+        </a>
+    </div>
+{% endfor %}
+<div>
+    <p>{{name}}</p>
+    <div>{{content | safe}}</div>
+</div>
+
+{% include 'footer.njk' %}

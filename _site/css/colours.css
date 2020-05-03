@@ -1,0 +1,55 @@
+/* Background Colours */
+body {
+	background: lavender;
+	border: 5px solid rebeccapurple;
+}
+
+body > header {
+	background-color: honeydew;
+	background-image: linear-gradient(90deg, transparent 50%, mintcream 50%);
+	border: 5px solid green;
+}
+
+.app section {
+	background-color: lemonchiffon;
+	background-image: linear-gradient(transparent 50%, lightyellow 50%);
+	border: 5px solid gold;
+}
+
+main.grid article {
+	background: linear-gradient(135deg, #fff 25%, transparent 25%) -50px 0, linear-gradient(225deg, #fff 25%, transparent 25%) -50px 0,
+		linear-gradient(315deg, #fff 25%, transparent 25%), linear-gradient(45deg, #fff 25%, transparent 25%);
+	background-color: #ffe7de;
+	background-size: 100px 100px;
+	border: 5px solid lightsalmon;
+}
+
+.root.app > main {
+	background-color: lightcyan;
+	border: 5px solid #1c75bc;
+}
+
+.app main article main {
+	font-family: 'Blokk';
+	font-size: 1.5em;
+}
+
+.app main > article {
+	background: lightcyan;
+	border: 5px solid #1c75bc;
+}
+
+.app aside {
+	background: linear-gradient(135deg, #fff 25%, transparent 25%) -50px 0, linear-gradient(225deg, #fff 25%, transparent 25%) -50px 0,
+		linear-gradient(315deg, #fff 25%, transparent 25%), linear-gradient(45deg, #fff 25%, transparent 25%);
+	background-size: 100px 100px;
+	background-color: #ffe7de;
+
+	border: 5px solid lightsalmon;
+}
+
+footer {
+	background-color: pink;
+	background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, mistyrose 35px, mistyrose 70px);
+	border: 5px solid hotpink;
+}

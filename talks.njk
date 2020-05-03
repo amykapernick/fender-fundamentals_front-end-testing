@@ -1,0 +1,11 @@
+{% include 'header.njk' %}
+<div>
+	{% for talk in collections.talks %}
+		<div>
+			<a>
+				{{talk.data.title}}
+			</a>
+		</div>
+	{% endfor %}
+</div>
+{% include 'footer.njk' %}
