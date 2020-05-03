@@ -1,15 +1,17 @@
 {% include 'header.html' %}
 
 {% for talk in collections.talks %}
-	<div>
-		<a href="{{talk.url | url}}">
-			{{talk.data.title}}
-		</a>
-	</div>
+<article>
+	<a href="{{talk.url | url}}">
+		{{talk.data.title}}
+	</a>
+</article>
 {% endfor %}
-<div>
-	<p>{{title}}</p>
+<article>
+	<header>
+		<h1>{{title}}</h1>
+	</header>
 	<div>{{content | safe}}</div>
-</div>
+</article>
 
 {% include 'footer.html' %}

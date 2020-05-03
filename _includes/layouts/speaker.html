@@ -1,15 +1,18 @@
 {% include 'header.html' %}
 
 {% for speaker in collections.speakers %}
-	<div>
-		<a href="{{speaker.url | url}}">
-			{{speaker.data.name}}
-		</a>
-	</div>
+<article>
+	<a href="{{speaker.url | url}}">
+		{{speaker.data.name}}
+	</a>
+</article>
 {% endfor %}
-<div>
-	<p>{{name}}</p>
+
+<article>
+	<header>
+		<h1>{{name}}</h1>
+	</header>
 	<div>{{content | safe}}</div>
-</div>
+</article>
 
 {% include 'footer.html' %}
