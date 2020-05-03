@@ -1,0 +1,11 @@
+{% include 'header.html' %}
+<div>
+	{% for talk in collections.talks %}
+	<div>
+		<a href="{{talk.url | url}}">
+			{{talk.data.title}}
+		</a>
+	</div>
+	{% endfor %}
+</div>
+{% include 'footer.html' %}

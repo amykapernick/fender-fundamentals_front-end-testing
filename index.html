@@ -1,0 +1,26 @@
+{% include 'header.html' %}
+
+<main>
+	<section>
+		<h2>Speakers</h2>
+		{% for speaker in collections.speakers %}
+			<article>
+				<a href="{{speaker.url | url}}">
+					{{speaker.data.name}}
+				</a>
+			</article>
+		{% endfor %}
+	</section>
+	<section>
+		<h2>Talks</h2>
+		{% for talk in collections.talks %}
+			<article>
+				<a href="{{talk.url | url}}">
+					{{talk.data.title}}
+				</a>
+			</article>
+		{% endfor %}
+	</section>
+</main>
+
+{% include 'footer.html' %}
