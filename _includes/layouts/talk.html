@@ -12,6 +12,24 @@
 		<h1>{{title}}</h1>
 	</header>
 	<div>{{content | safe}}</div>
+	<aside>
+		<h2>Speaker</h2>
+		<ul class="speakers">
+			{% for speak in collections.speakers %}
+			{% set speakerOpt = speak.url | replace('/speakers/', '') | replace('/', '') %}
+			{% if speaker == speakerOpt %}
+			<li>
+				<a href="{{speak.url | url}}">
+					{{speak.data.name}}
+				</a>
+				<div class="bio">
+					{{speak.data.content | safe}}
+				</div>
+			</li>
+			{% endif %}
+			{% endfor %}
+		</ul>
+	</aside>
 </article>
 
 {% include 'footer.html' %}
