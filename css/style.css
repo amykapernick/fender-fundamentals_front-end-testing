@@ -1,0 +1,40 @@
+body, html {
+	max-width: 100vw;
+	overflow: hidden;
+}
+
+body {
+	margin: 0;
+}
+
+header, footer, main, .sidebar, .content {
+	padding: 10px 15px;
+}
+
+nav {
+	max-width: 400px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav a {
+	padding: 5px 10px;
+}
+
+section article {
+	padding: 5px 10px;
+}
+
+aside .speakers {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.listing article {
+	padding: 10px 5px;
+}
