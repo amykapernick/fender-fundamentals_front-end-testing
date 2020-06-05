@@ -1,0 +1,65 @@
+body {
+	display: grid;
+	grid-template-columns: 200px 2fr 1fr;
+	grid-template-rows: 100px 1fr 50px;
+	grid-template-areas: 
+		'h 			h 		h'
+		'content	content	content'
+		'footer		footer	footer';
+	min-height: 100vh;
+}
+
+header {
+	grid-area: h;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+main {
+	grid-area: content;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+
+.listing {
+	display: block;
+}
+
+footer {
+	grid-area: footer;
+	display: flex;
+	align-items: center;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+.content {
+	grid-column: span 2;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: auto 1fr;
+	grid-template-areas: 
+		'h 		talks'
+		'bio	talks';
+	grid-column-gap: 20px;
+}
+
+div {
+	grid-area: bio
+}
+
+aside {
+	grid-area: talks
+}
+
+
+@supports (grid-template-columns: subgrid) {
+	.content {
+		grid-template-columns: subgrid;
+	}
+
+}	

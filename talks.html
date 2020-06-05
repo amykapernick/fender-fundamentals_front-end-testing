@@ -1,5 +1,6 @@
 {% include 'header.html' %}
-<main>
+<main class="listing">
+	<h1>All Talks</h1>
 	{% for talk in collections.talks %}
 	<article>
 		<a href="{{talk.url | url}}">
