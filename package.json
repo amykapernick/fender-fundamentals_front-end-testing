@@ -6,7 +6,8 @@
   "scripts": {
     "start": "eleventy --serve",
     "start:hotel": "eleventy --serve --port=$PORT",
-    "build": "eleventy"
+    "build": "eleventy",
+    "cy:open": "cypress open"
   },
   "keywords": [],
   "author": "Amy Kapernick <amy@aimhigherweb.design> (https://amyskapers.dev)",
@@ -14,6 +15,7 @@
   "dependencies": {
     "@11ty/eleventy": "^0.10.0",
     "clean-css": "^4.2.1",
+    "cypress": "^4.6.0",
     "markdown-it": "^10.0.0",
     "markdown-it-anchor": "^5.2.4",
     "path": "^0.12.7"
