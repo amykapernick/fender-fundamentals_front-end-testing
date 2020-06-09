@@ -25,6 +25,7 @@
     "pa11y": "^5.3.0",
     "pa11y-reporter-html": "^2.0.0",
     "path": "^0.12.7",
+    "pre-commit": "^1.2.2",
     "puppeteer-core": "^3.3.0"
   }
 }
