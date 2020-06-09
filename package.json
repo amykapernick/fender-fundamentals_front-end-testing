@@ -10,9 +10,11 @@
     "cy:open": "cypress open",
     "test:a11y": "node --trace-warnings tests/pa11y.js ",
     "test:vr": "backstop test",
-    "test:vr:approve": "backstop approve"
+    "test:vr:approve": "backstop approve",
+    "precommit:msg": "echo 'Pre-commit checks...' && exit 0"
   },
   "pre-commit": [
+    "precommit:msg",
     "test:vr"
   ],
   "keywords": [],
