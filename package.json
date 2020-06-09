@@ -7,7 +7,10 @@
     "start": "eleventy --serve",
     "start:hotel": "eleventy --serve --port=$PORT",
     "build": "eleventy",
-    "cy:open": "cypress open"
+    "cy:open": "cypress open",
+    "test:a11y": "node --trace-warnings tests/pa11y.js ",
+    "test:vr": "backstop test",
+    "test:vr:approve": "backstop approve"
   },
   "keywords": [],
   "author": "Amy Kapernick <amy@aimhigherweb.design> (https://amyskapers.dev)",
@@ -15,11 +18,12 @@
   "dependencies": {
     "@11ty/eleventy": "^0.11.0",
     "clean-css": "^4.2.1",
-    "cypress": "^4.7.0",
+    "cypress": "^4.8.0",
     "file-system": "^2.2.2",
     "markdown-it": "^11.0.0",
     "markdown-it-anchor": "^5.3.0",
     "pa11y": "^5.3.0",
+    "pa11y-reporter-html": "^2.0.0",
     "path": "^0.12.7",
     "puppeteer-core": "^3.3.0"
   }
