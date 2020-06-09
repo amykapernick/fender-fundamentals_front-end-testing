@@ -1,7 +1,7 @@
 {% include 'header.html' %}
 <main class="listing talks">
-	<h1>All Talks</h1>
-	{% for talk in collections.talks %}
+	<h1>All Workshops</h1>
+	{% for talk in collections.workshops %}
 	<article>
 		<a href="{{talk.url | url}}">
 			{{talk.data.title}}

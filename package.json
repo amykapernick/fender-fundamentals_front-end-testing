@@ -11,12 +11,8 @@
     "test:a11y": "node --trace-warnings tests/pa11y.js ",
     "test:vr": "backstop test",
     "test:vr:approve": "backstop approve",
-    "precommit:msg": "echo 'Pre-commit checks...' && exit 0"
+    "precommit": "npm run test:vr && npm run test:a11y"
   },
-  "pre-commit": [
-    "precommit:msg",
-    "test:vr"
-  ],
   "keywords": [],
   "author": "Amy Kapernick <amy@aimhigherweb.design> (https://amyskapers.dev)",
   "license": "MIT",
