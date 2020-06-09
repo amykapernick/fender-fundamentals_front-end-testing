@@ -2,7 +2,7 @@ const pa11y = require(`pa11y`),
 	puppeteer = require(`puppeteer-core`),
 	fs = require(`file-system`),
 	port = 33069,
-	site = `http://localhost:${port}`,
+	site = `http://localhost:${port}`,  
 	html = require('pa11y-reporter-html');
 
 const runTest = async () => {
