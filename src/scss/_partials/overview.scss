@@ -1,0 +1,14 @@
+@use '../variables.scss';
+
+main {
+	a.date {
+		margin: 10px 0 10px 20px;
+		color: inherit;
+		font-size: 1.8em;
+		text-decoration: none;
+
+		&:hover, &:focus {
+			background: variables.$blue;
+		}
+	}
+}

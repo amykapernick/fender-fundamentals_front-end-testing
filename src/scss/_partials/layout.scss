@@ -1,0 +1,52 @@
+@use '../variables.scss';
+
+main {
+	section {
+		padding: 10px 20px;
+
+		h2 {
+			margin: 0;
+		}
+
+		button {
+			&.add {
+				border-color: transparent;
+				background: none;
+				color: variables.$green;
+
+				&:hover, &:focus {
+					background: variables.$green;
+					color: #ffffff;
+				}
+			}
+		}
+	}
+
+	.date {
+		margin: 0;
+		text-align: center;
+	}
+
+	.notes, .notes_week, .notes_month {
+		textarea {
+			margin-top: 20px;
+			padding: 12px 20px;
+			border-radius: 10px;
+			background: variables.$neutral_light_90;
+			color: #ffffff;
+		}
+	}
+
+
+	.days {
+		.lists {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		.day {
+			margin: 0 15px;
+		}
+	}
+}

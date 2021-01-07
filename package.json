@@ -1,31 +1,47 @@
 {
-  "name": "front_end_fundamentals",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "front-end-fundamentals_front-end-testing",
+  "version": "2.0.0",
+  "main": "public/index.html",
   "scripts": {
-    "start": "eleventy --serve",
-    "start:hotel": "eleventy --serve --port=$PORT",
-    "build": "eleventy",
-    "cy:open": "cypress open",
-    "test:a11y": "node --trace-warnings tests/pa11y.js ",
-    "test:vr": "backstop test",
-    "test:vr:approve": "backstop approve",
-    "precommit": "npm run test:vr && npm run test:a11y"
+    "start": "parcel public/index.html --dist-dir dist",
+    "build": "parcel build public/index.html",
+    "clean": "rm -rf .parcel-cache dist"
   },
-  "keywords": [],
-  "author": "Amy Kapernick <amy@aimhigherweb.design> (https://amyskapers.dev)",
+  "author": "Amy Kapernick <amy@kapers.dev> (https://amyskapers.dev)",
   "license": "MIT",
   "dependencies": {
-    "@11ty/eleventy": "^0.11.0",
-    "clean-css": "^4.2.1",
-    "cypress": "^4.8.0",
-    "file-system": "^2.2.2",
-    "markdown-it": "^11.0.0",
-    "markdown-it-anchor": "^5.3.0",
-    "pa11y": "^5.3.0",
-    "pa11y-reporter-html": "^2.0.0",
-    "path": "^0.12.7",
-    "puppeteer-core": "^3.3.0"
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "@svgr/parcel-plugin-svgr": "^5.5.0",
+    "babel-eslint": "^10.1.0",
+    "cypress": "^6.2.1",
+    "eslint": "^7.17.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-react": "^7.22.0",
+    "parcel": "^2.0.0-beta.1",
+    "parcel-plugin-static-files-copy": "^2.5.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-inlinesvg": "^2.2.2",
+    "react-router-dom": "^5.2.0",
+    "reat": "^0.0.1-security",
+    "stylelint": "^13.8.0",
+    "stylelint-config-property-sort-order-smacss": "^7.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.18.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "sass": "^1.32.0"
+  },
+  "staticFiles": {
+    "staticPath": "public",
+    "watcherGlob": "**",
+    "excludeGlob": [
+      "index.html"
+    ]
   }
 }
