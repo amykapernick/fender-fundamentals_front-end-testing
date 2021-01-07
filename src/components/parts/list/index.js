@@ -132,11 +132,9 @@ const List = ({ listName }) => {
 			 <div className="modal" open={newTaskOpen}>
 				<button className="icon close" onClick={() => openNewTask(!newTaskOpen)}>
 					<Close />
-					<span className="sr-only">Close Modal</span>
 				</button>
 				<form className="toggle" onSubmit={(e) => addTask(e)} open={!addMultiple}>
 					<legend>Add New Task</legend>
-					<label className="sr-only">New Task Name</label>
 					<input
 						type="text"
 						placeholder="New Task"
@@ -144,12 +142,10 @@ const List = ({ listName }) => {
 					/>
 					<button className="icon add" type="submit">
 						<Add />
-						<span className="sr-only">Add Task</span>
 					</button>
 				</form>
 				<form className="toggle" onSubmit={(e) => addMultipleTask(e)} open={addMultiple}>
 					<legend>Add New Tasks</legend>
-					<label className="sr-only">New Tasks</label>
 					<textarea
 						className="multiple"
 						defaultValue={`Task 1\nTask 2\nTask 3`}
@@ -157,7 +153,6 @@ const List = ({ listName }) => {
 					/>
 					<button className="icon add" type="submit">
 						<Add />
-						<span className="sr-only">Add Task</span>
 					</button>
 				</form>
 				<button className="toggle add" type="button" onClick={() => toggleInputMethod(!addMultiple)}>
@@ -169,7 +164,6 @@ const List = ({ listName }) => {
 			</div>
 			<button className="icon add" onClick={() => openNewTask(!newTaskOpen)}>
 				<Add />
-				<span className="sr-only">Add New Task</span>
 			</button>
 			<ul className="list">
 				{todos.map((task, index) => (

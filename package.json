@@ -5,7 +5,12 @@
   "scripts": {
     "start": "parcel public/index.html --dist-dir dist",
     "build": "parcel build public/index.html",
-    "clean": "rm -rf .parcel-cache dist"
+    "clean": "rm -rf .parcel-cache dist",
+    "test:eslint": "eslint --fix --output-file tests/eslint.json --format json .",
+    "test:pa11y": "node tests/pa11y.js",
+    "test:backstop": "backstop test",
+    "test:approve": "backstop approve",
+    "test:cy": "cypress open"
   },
   "author": "Amy Kapernick <amy@kapers.dev> (https://amyskapers.dev)",
   "license": "MIT",
@@ -20,6 +25,8 @@
     "eslint-loader": "^4.0.2",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-react": "^7.22.0",
+    "file-system": "^2.2.2",
+    "pa11y": "^5.3.0",
     "parcel": "^2.0.0-beta.1",
     "parcel-plugin-static-files-copy": "^2.5.0",
     "react": "^17.0.1",

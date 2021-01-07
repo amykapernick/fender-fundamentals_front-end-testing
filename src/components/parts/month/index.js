@@ -124,10 +124,10 @@ const MonthView = ({ monthId }) => {
 
 				saveLocal(events);
 			}
+		},
+		editForm = (ref, e) => {
+			changeLabel(ref, { target: e.target.elements.label });
 		};
-	editForm = (ref, e) => {
-		changeLabel(ref, { target: e.target.elements.label });
-	};
 
 	let row = 1,
 		column = 1;

@@ -4,6 +4,22 @@ main {
 	section {
 		padding: 10px 20px;
 
+		&:not(.days):not(.notes):not(.notes_week):not(.notes_month), .day {
+			display: grid;
+			grid-template-columns: 1fr auto;
+			align-content: start;
+			align-items: center;
+			justify-content: center;
+
+			.modal {
+				order: 2;
+			}
+
+			.list {
+				grid-column: span 2;
+			}
+		}
+
 		h2 {
 			margin: 0;
 		}
@@ -37,9 +53,10 @@ main {
 		}
 	}
 
-
 	.days {
 		.lists {
+			display: grid;
+			grid-template-columns: repeat(7, 1fr);
 			margin: 0;
 			padding: 0;
 			list-style: none;
