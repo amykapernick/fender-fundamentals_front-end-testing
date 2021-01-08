@@ -6,6 +6,7 @@ const runTest = async () => {
 		pa11y(`http://localhost:1234/week`, {
 			standard: `WCAG2AAA`,
 			screenCapture: `./tests/results/weekly.png`,
+			timeout: 10000
 		}),
 		// pa11y(`http://localhost:1234/month`, {
 		// 	standard: `WCAG2AAA`,
